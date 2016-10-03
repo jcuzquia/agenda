@@ -1,0 +1,14 @@
+@(contactForm : Form[Contact])
+
+@import helper._
+
+@implicitFieldConstructor = @{ b3.horizontal.fieldConstructor("col-md-2", "col-md-8") }
+
+@main("New Contact"){
+	@form(routes.Agenda.createContact()){
+		@inputText(contactForm("name"))
+		@inputText(contactForm("phone"))
+		@inputText(contactForm("email"))
+		<input type="submit" class="btn btn-primary" value="Submit"/>
+	}
+}
