@@ -13,7 +13,7 @@ public class AgendaAuthenticator extends Authenticator {
 			return null;
 		}
 		
-		if (basicAuthUser.name.equals("mgonto") && basicAuthUser.password.equals("mgonto")){
+		if (basicAuthUser.name.equals("jcuzquia") && basicAuthUser.password.equals("01031986,Jcus")){
 			return basicAuthUser.name;
 		} else {
 			return null;
